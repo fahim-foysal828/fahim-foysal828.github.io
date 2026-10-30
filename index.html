@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md. Fahim Foysal | ICT Student & Developer</title>
+<meta name="description" content="Portfolio of Md. Fahim Foysal, ICT student at MBSTU. C++, Qt and cryptography projects.">
+<style>
+:root{
+  --bg:#0a1230; --bg2:#0f1b45; --card:#111d4a; --line:#223166;
+  --text:#e8eefc; --muted:#9db0d8; --accent:#2ec4b6; --accent2:#5aa9ff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:rgba(10,18,48,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav .logo{font-weight:700;color:var(--text)}
+nav .logo span{color:var(--accent)}
+nav ul{display:flex;gap:22px;list-style:none}
+nav ul a{color:var(--muted);font-size:.95rem}
+nav ul a:hover{color:var(--accent);text-decoration:none}
+.hero{padding:90px 0 70px;background:radial-gradient(circle at 80% 10%,#16307a 0,transparent 55%),linear-gradient(160deg,var(--bg),var(--bg2))}
+.hero .wrap{display:flex;gap:48px;align-items:center;flex-wrap:wrap}
+.avatar{width:150px;height:150px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-size:3.2rem;font-weight:800;color:#06102c;flex:none;box-shadow:0 0 0 6px rgba(46,196,182,.18)}
+.hero h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15}
+.hero h1 span{color:var(--accent)}
+.hero p.role{color:var(--accent2);font-weight:600;margin:8px 0 14px}
+.hero p.lead{color:var(--muted);max-width:560px}
+.btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{padding:11px 22px;border-radius:10px;font-weight:600;border:1px solid var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);color:#06102c}
+.btn:hover{text-decoration:none;opacity:.88}
+section{padding:70px 0}
+section h2{font-size:1.7rem;margin-bottom:8px}
+section h2::after{content:"";display:block;width:54px;height:3px;background:var(--accent);margin-top:8px;border-radius:2px}
+.sub{color:var(--muted);margin:14px 0 30px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.facts li{list-style:none;padding:8px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between;gap:16px}
+.facts li:last-child{border:0}
+.facts span{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:8px 16px;border-radius:999px;background:rgba(90,169,255,.12);border:1px solid var(--line);font-size:.92rem}
+.chip.hot{background:rgba(46,196,182,.14);border-color:rgba(46,196,182,.5)}
+.proj h3{font-size:1.35rem;margin-bottom:6px}
+.proj .tags{margin:14px 0}
+.proj ul{margin:10px 0 18px 20px;color:var(--muted)}
+.proj .links{display:flex;gap:12px;flex-wrap:wrap}
+.alt{background:var(--bg2)}
+footer{padding:34px 0;text-align:center;color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
+.contact a.card{display:block;color:var(--text);transition:transform .15s,border-color .15s}
+.contact a.card:hover{transform:translateY(-3px);border-color:var(--accent);text-decoration:none}
+.contact small{display:block;color:var(--muted)}
+@media(max-width:640px){nav ul{gap:14px}nav ul a{font-size:.85rem}.hero{padding:60px 0 50px}.hero .wrap{flex-direction:column;text-align:center}.btns{justify-content:center}.facts li{flex-direction:column;gap:0}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Fahim<span>.</span></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="avatar">FF</div>
+    <div>
+      <h1>Hi, I'm <span>Md. Fahim Foysal</span></h1>
+      <p class="role">ICT Student &bull; C++ &amp; Qt Developer</p>
+      <p class="lead">I study Information and Communication Technology at Mawlana Bhashani Science and Technology University. I enjoy building desktop software and learning how cryptography works under the hood.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">View my project</a>
+        <a class="btn" href="https://github.com/fahim-foysal828" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <p class="sub">A quick overview of who I am and what I study.</p>
+    <div class="card">
+      <ul class="facts">
+        <li><span>Name</span><strong>Md. Fahim Foysal</strong></li>
+        <li><span>Student ID</span><strong>IT-25055</strong></li>
+        <li><span>Department</span><strong>Information and Communication Technology (ICT)</strong></li>
+        <li><span>University</span><strong>Mawlana Bhashani Science and Technology University</strong></li>
+        <li><span>Interests</span><strong>Desktop apps, cryptography, C++, open source</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="alt">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="sub">Tools and technologies I have used in my projects.</p>
+    <div class="chips">
+      <span class="chip hot">C++17</span>
+      <span class="chip hot">Qt 6 (Widgets)</span>
+      <span class="chip hot">CMake</span>
+      <span class="chip hot">OpenSSL</span>
+      <span class="chip">Cryptography basics</span>
+      <span class="chip">AES-128 / PBKDF2 / SHA-256</span>
+      <span class="chip">LaTeX / Overleaf</span>
+      <span class="chip">Git &amp; GitHub</span>
+      <span class="chip">Qt Creator</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Course project for ICT 1200, supervised by Dr. Ziaur Rahman.</p>
+    <div class="card proj">
+      <h3>&#128274; File Encryption Tool</h3>
+      <p style="color:var(--muted)">A C++ and Qt 6 desktop application that encrypts and decrypts text and binary files with a password, using Caesar Cipher, Vigen&egrave;re Cipher and AES-128.</p>
+      <div class="tags chips">
+        <span class="chip hot">C++17</span><span class="chip hot">Qt 6</span><span class="chip">CMake</span><span class="chip">OpenSSL</span><span class="chip">AES-128-CBC</span>
+      </div>
+      <ul>
+        <li>Password verification with SHA-256</li>
+        <li>AES key derived with PBKDF2-HMAC-SHA256 (100,000 iterations), random salt and IV</li>
+        <li>Simple GUI with file browser, show-password option and status messages</li>
+      </ul>
+      <div class="links">
+        <a class="btn primary" href="https://github.com/fahim-foysal828/FileEncryptionTool" target="_blank" rel="noopener">Source code</a>
+        <a class="btn" href="https://youtu.be/h1ehih1wZ0I" target="_blank" rel="noopener">Watch demo</a>
+        <a class="btn" href="https://github.com/fahim-foysal828/FileEncryptionTool/blob/main/report/report.pdf" target="_blank" rel="noopener">Read report</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="wrap contact">
+    <h2>Contact</h2>
+    <p class="sub">Feel free to reach out.</p>
+    <div class="grid">
+      <a class="card" href="mailto:it25055@mbstu.ac.bd"><strong>&#9993; Email</strong><small>it25055@mbstu.ac.bd</small></a>
+      <a class="card" href="https://github.com/fahim-foysal828" target="_blank" rel="noopener"><strong>&#128025; GitHub</strong><small>github.com/fahim-foysal828</small></a>
+      <a class="card" href="https://youtu.be/h1ehih1wZ0I" target="_blank" rel="noopener"><strong>&#9654; Project demo</strong><small>YouTube</small></a>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; 2026 Md. Fahim Foysal &middot; Mawlana Bhashani Science and Technology University</footer>
+
+</body>
+</html>
